@@ -99,6 +99,41 @@ export function useAudio() {
   }
 
   /**
+   * Reproduce una canción específica por número
+   */
+  function playSong(songNumber) {
+    if (audio) {
+      audio.pause()
+      audio = null
+    }
+
+    songIndex = songNumber
+    const songPath = `/musica/cancion${songNumber}.mp3`
+    currentSongName.value = `Canción ${songNumber}`
+
+    audio = new Audio(songPath)
+    audio.volume = volume.value
+    audio.loop = true
+
+    audio.addEventListener('error', () => {
+      console.warn(`[Audio] No se pudo cargar: ${songPath}`)
+      isPlaying.value = false
+    })
+
+    audio.addEventListener('canplaythrough', () => {
+      if (!isMuted.value) {
+        audio.play().then(() => {
+          isPlaying.value = true
+        }).catch(() => {
+          isPlaying.value = false
+        })
+      }
+    })
+
+    audio.load()
+  }
+
+  /**
    * Cambia a una canción diferente de forma aleatoria
    */
   function nextSong() {
@@ -124,6 +159,7 @@ export function useAudio() {
     currentSongName,
     volume,
     initAudio,
+    playSong,
     togglePlay,
     toggleMute,
     setVolume,
