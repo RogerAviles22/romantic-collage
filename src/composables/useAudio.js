@@ -47,7 +47,7 @@ export function useAudio() {
     }
 
     songIndex = getRandomSongIndex()
-    const songPath = `public/musica/cancion${songIndex}.mp3`
+    const songPath = `./media/musica/cancion${songIndex}.mp3`
     currentSongName.value = `Canción ${songIndex}`
 
     audio = new Audio(songPath)

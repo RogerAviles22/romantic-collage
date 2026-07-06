@@ -82,7 +82,7 @@ export function usePhotos() {
 
     // Seleccionar las 30 requeridas y mapear a su ruta pública
     const selected = shuffled.slice(0, needed)
-    const allPaths = selected.map(file => `public/fotos/${file}`)
+    const allPaths = selected.map(file => `./media/fotos/${file}`)
 
     galleries.value = chunkArray(allPaths, PHOTOS_PER_GALLERY)
   }
