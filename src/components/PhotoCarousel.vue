@@ -20,7 +20,7 @@
         >
           <h2 class="slide-title">{{ currentTitle }}</h2>
 
-          <!-- Galería de 4 fotos -->
+          <!-- Galería de 6 fotos -->
           <PhotoGallery
             :photos="gallery"
             :gallery-id="idx + galleries.length"
@@ -96,9 +96,10 @@ const viewportRef = ref(null)
 
 const SLIDE_TITLES = [
   'Nuestra historia empezó un 1 de Febrero.',
-  'Me conecté con una mirada tuya',
-  'y te enamoré con mi labia rara pero',
-  'pasaron 5 meses para preguntarte si',
+  'Me conecté con tu mirada tierna y dulce en 2 segundos.',
+  'Te enamoré con mi rara pero excelente labia.',
+  'Y cada momento a tu lado es un regalo.',
+  'Después de 5 meses te pregunto.',
 ]
 
 const totalSlides = computed(() => props.galleries.length + 1)

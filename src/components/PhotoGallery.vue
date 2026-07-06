@@ -1,9 +1,9 @@
 <template>
   <!-- ═══════════════════════════════════════════════════
        PhotoGallery.vue
-       Mosaico de 4 fotos con efecto floating/antigravity
-       Props:
-         - photos    : array de 4 rutas de imágenes
+        Mosaico de 6 fotos con efecto floating/antigravity
+        Props:
+          - photos    : array de 6 rutas de imágenes
          - galleryId : identificador único para la galería
        ═══════════════════════════════════════════════════ -->
   <div class="px-2 py-1" :id="`galeria-${galleryId}`">
@@ -52,7 +52,7 @@
 
         <!-- Placeholder en caso de error -->
         <div v-if="loadedStates[idx] === 'error'" class="photo-placeholder">
-          <span>{{ ['🌸', '💕', '✨', '🌺'][idx] || '💖' }}</span>
+          <span>{{ ['🌸', '💕', '✨', '🌺', '💖', '🌹'][idx] || '💖' }}</span>
         </div>
 
         <!-- Overlay con corazón al hover -->
@@ -72,6 +72,8 @@ const FLOAT_CONFIGS = [
   { duration: '4.8s', delay: '0.7s' },
   { duration: '6.2s', delay: '0.3s' },
   { duration: '5.0s', delay: '1.1s' },
+  { duration: '5.8s', delay: '0.5s' },
+  { duration: '5.3s', delay: '0.9s' },
 ]
 
 const props = defineProps({

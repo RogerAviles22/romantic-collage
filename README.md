@@ -11,8 +11,8 @@ romantic-collage/
 │   │   ├── foto1.jpg
 │   │   ├── foto2.jpg
 │   │   ├── foto3.jpg
-│   │   │   ... (mínimo 16 fotos, idealmente 20+)
-│   │   └── foto20.jpg
+│   │   │   ... (mínimo 30 fotos, idealmente 35+)
+│   │   └── foto30.jpg
 │   │
 │   └── musica/         ← 🎵 SUBE AQUÍ TUS CANCIONES
 │       ├── cancion1.mp3
@@ -39,12 +39,12 @@ romantic-collage/
 ## Pasos de Configuración
 
 ### 1. Sube tus fotos
-- Coloca **mínimo 16 fotos** en `public/fotos/`
+- Coloca **mínimo 30 fotos** en `public/fotos/`
 - Nómbralas: `foto1.jpg`, `foto2.jpg`, ..., `fotoN.jpg`
 - Acepta: `.jpg`, `.jpeg`, `.png`, `.webp`
 - Abre `src/composables/usePhotos.js` y cambia:
   ```js
-  const TOTAL_PHOTOS = 20  // ← pon aquí tu número total
+  const TOTAL_PHOTOS = 30  // ← pon aquí tu número total (6 fotos × 5 galerías = 30)
   ```
 
 ### 2. Sube tu música
@@ -57,7 +57,7 @@ romantic-collage/
 
 ### 3. Personaliza las frases (opcional)
 - Abre `src/App.vue`
-- Busca el comentario `// DATOS: Array de 4 cartas románticas`
+- Busca el comentario `// DATOS: Array de 5 cartas románticas`
 - Edita el `phrase` de cada carta con tus propias palabras
 
 ### 4. Ejecutar la app
@@ -82,8 +82,8 @@ Sube el contenido de `dist/` a cualquier hosting estático
 
 ## Características
 
-- 🎴 **4 Cartas románticas** con efecto floating/antigravity
-- 📸 **Galerías en mosaico** — 4 fotos por carta en layout irregular
+- 🎴 **5 Cartas románticas** con efecto floating/antigravity
+- 📸 **Galerías en mosaico** — 6 fotos por carta en layout irregular
 - 🎲 **Selección aleatoria** — cada recarga muestra fotos diferentes
 - 🎵 **Música de fondo** — canción aleatoria de tu carpeta
 - 💍 **Propuesta especial** — botón "No" que escapa al tocarlo

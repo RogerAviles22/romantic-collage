@@ -17,7 +17,7 @@
 
       <!-- Ícono central animado -->
       <div class="text-center mb-6 relative z-10">
-        <span class="text-6xl block mb-2" style="animation: heartBeat 1.5s ease-in-out infinite;">💍</span>
+        <span class="text-6xl block mb-2" style="animation: heartBeat 1.5s ease-in-out infinite;">👩🏾‍❤️‍💋‍👨🏽</span>
         <div class="romantic-divider">
           <span style="color: rgba(255,107,157,0.6);">♥</span>
         </div>
@@ -85,8 +85,8 @@
         ¡Me haces el más feliz del mundo!
       </h2>
       <p class="mb-6" style="font-family: var(--font-romantic); font-style: italic; color: var(--color-champagne); font-size: 1.1rem; line-height: 1.7;">
-        Gracias por elegirme. Prometo amarte cada día más
-        y ser el mejor para ti. 💕
+        Prometo quererte cada día más
+        y ser el mejor para ti, para nosotros. 💕
       </p>
       <div class="romantic-divider mb-4">
         <span style="color: rgba(255,107,157,0.6);">♥</span>

@@ -86,7 +86,7 @@ import { usePhotos } from './composables/usePhotos.js'
 import { useAudio  } from './composables/useAudio.js'
 
 // ─────────────────────────────────────────────────────────
-// DATOS: Array de 4 cartas románticas
+// DATOS: Array de 5 cartas románticas
 // ← PERSONALIZA AQUÍ las frases para tu persona especial
 // ─────────────────────────────────────────────────────────
 const letters = [
@@ -114,6 +114,12 @@ const letters = [
     phrase:
       'En un universo lleno de posibilidades, elegiría encontrarte en cada una. ' +
       'Eres mi lugar favorito, mi calma y mi aventura al mismo tiempo.',
+  },
+  {
+    icon: '🌙',
+    phrase:
+      'Si me preguntaran qué es la felicidad, no dudaría ni un segundo en decir que es tu risa. ' +
+      'Eres lo más bonito que me ha pasado y quiero seguir coleccionando instantes contigo.',
   },
 ]
 

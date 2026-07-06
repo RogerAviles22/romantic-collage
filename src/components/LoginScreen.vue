@@ -93,7 +93,7 @@ onUnmounted(() => {
 })
 
 function handleSubmit() {
-  if (password.value === '1') {
+  if (password.value === '14022026') {
     emit('authenticated')
   } else {
     errorMsg.value = 'Clave incorrecta, intenta de nuevo, tu puedes 💪'
